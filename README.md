@@ -14,13 +14,13 @@ python3 -m unittest discover -s tests -v
 
 `index.html` is the canonical page; `styles.css` controls the responsive layout and `script.js` progressively updates the footer year. All core content/navigation works without JavaScript. System fonts avoid third-party font requests. The older standalone HTML URL redirects to the canonical page.
 
-## Review status and content policy
+## Project status and content policy
 
-These changes are prepared on a review branch. They do not publish a deployment. Project status labels distinguish existing prototypes from work in review; update those labels after the corresponding project PRs merge and their checks succeed.
+The three featured project improvements have been merged into their main branches after passing checks. Project labels describe the implemented scope: a catalog demo, a local event-pipeline prototype, and a lexical retrieval baseline. Keep these descriptions aligned with the source and validation evidence as the projects evolve.
 
-Unsupported project benchmark numbers and the inaccessible job-processing project have been removed from the proposed page. Experience descriptions are based on candidate-provided history; they are not independently verified by public employer code. The original `resume.pdf` remains unchanged, but its download links are removed because its project bullets still include unverified metrics. Replace/review that PDF before restoring a resume download. Email remains available for resume requests.
+Unsupported project benchmark numbers and the inaccessible job-processing project have been removed from the page. Experience descriptions are based on candidate-provided history; they are not independently verified by public employer code. The original `resume.pdf` remains unchanged, but its download links are removed because its project bullets still include unverified metrics. Replace/review that PDF before restoring a resume download. Email remains available for resume requests.
 
-The website is served from `main` by GitHub Pages. Merging this branch may publish the website automatically, so merge/publish requires the owner’s explicit approval. The CI workflow performs checks only; it does not deploy.
+The website is served from `main` by GitHub Pages. Future merges to main may publish the website automatically and require the owner’s explicit approval. The CI workflow performs checks only; it does not deploy.
 
 ## Accessibility and maintenance
 

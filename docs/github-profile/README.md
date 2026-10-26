@@ -10,13 +10,13 @@ I’m seeking **2027 new graduate software engineering roles**, especially in ba
 
 | Project | Implementation and current focus |
 | --- | --- |
-| [Real-Time Analytics Platform](https://github.com/malavikakashireddy/real-time-analytics-platform) | Python event producer/consumer, Kafka, PostgreSQL persistence, and FastAPI SQL analytics. A review branch adds commit-after-persistence delivery, validation, replay-safe storage, and a throughput/latency harness. |
-| [Machinery Find](https://github.com/malavikakashireddy/machinery-find) | Next.js and TypeScript equipment-browsing demo with a REST API and nine sample listings. Review work adds validated filters, request cancellation, error recovery, accessibility improvements, and browser checks. |
-| [DevDocs AI](https://github.com/malavikakashireddy/devdocs-ai) | Developer-documentation search project. A review branch extends the FastAPI foundation with local ingestion, persistent SQLite/BM25 search, line-level source references, and a small Recall@k evaluator. Semantic retrieval and RAG are planned. |
+| [Real-Time Analytics Platform](https://github.com/malavikakashireddy/real-time-analytics-platform) | Python event producer/consumer, Kafka, PostgreSQL persistence, and FastAPI SQL analytics. Includes commit-after-persistence delivery, validation, replay-safe storage, and a throughput/latency harness. |
+| [Machinery Find](https://github.com/malavikakashireddy/machinery-find) | Next.js and TypeScript equipment-browsing demo with a REST API and nine sample listings. Includes validated filters, request cancellation, error recovery, accessibility improvements, and browser checks. |
+| [DevDocs AI](https://github.com/malavikakashireddy/devdocs-ai) | Developer-documentation search project. The FastAPI backend provides local ingestion, persistent SQLite/BM25 search, line-level source references, and a small Recall@k evaluator. Semantic retrieval and RAG are planned. |
 
 ### Engineering checks
 
-A GitHub CI smoke run persisted all 500 test events from Kafka to PostgreSQL at a deliberately limited 100 events/second; this checks the pipeline rather than maximum capacity. The review branches also include locally executed tests for idempotent document updates, source references, failed-storage offset handling, malformed-event quarantine, catalog validation, and UI recovery. Each repository’s validation notes distinguish passing local checks from service integrations that still need to run. I’m building reproducible evidence before publishing performance claims.
+A GitHub CI smoke run persisted all 500 test events from Kafka to PostgreSQL at a deliberately limited 100 events/second; this checks the pipeline rather than maximum capacity. The repositories also include locally executed tests for idempotent document updates, source references, failed-storage offset handling, malformed-event quarantine, catalog validation, and UI recovery. Each repository’s validation notes distinguish passing local and CI checks from experiments that remain unverified. I’m building reproducible evidence before publishing performance claims.
 
 ## Tools and foundations
 
