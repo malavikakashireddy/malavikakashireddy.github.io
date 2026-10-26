@@ -13,10 +13,10 @@ Prepared review branch. The deployed site remains unchanged until explicitly app
 | Existing `resume.pdf` | Parsed; contains unsupported project metrics. Preserved but no longer prominently linked by the proposed page |
 | LinkedIn destination | URL matches existing site/resume; current ownership/content not independently verified |
 | Email delivery | Address matches source/profile; no email sent and delivery not tested |
-| Browser/mobile visual QA | **Not completed**: browser runtime/download attempts failed |
-| Keyboard/screen-reader testing | Code prepared; **not verified interactively** |
-| Remote CI / deployment | Check-only workflow added; no deployment initiated |
+| Browser/mobile visual QA | [Passed in GitHub CI: run 40401372470](https://github.com/malavikakashireddy/malavikakashireddy.github.io/actions/runs/40401372470); local browser runtime unavailable |
+| Keyboard/screen-reader testing | Skip-link focus verified in Chromium CI; human screen-reader review remains open |
+| Remote CI / deployment | [Check-only workflow passed](https://github.com/malavikakashireddy/malavikakashireddy.github.io/actions/runs/40401372470); no deployment initiated |
 
-The new page uses semantic sections, a skip link, visible focus, persistent mobile navigation, responsive grids, and system fonts. All primary content exists in HTML and the script only updates the footer year; no JavaScript-driven reveal can hide project content. These are source-level findings, not a WCAG conformance claim. Core Web Vitals, assistive technology, mobile overflow, and cross-browser rendering still need measurement in working browsers.
+The new page uses semantic sections, a skip link, visible focus, persistent mobile navigation, responsive grids, and system fonts. All primary content exists in HTML and the script only updates the footer year; no JavaScript-driven reveal can hide project content. Chromium CI confirmed visible navigation, no horizontal overflow at 320/375/768/1440 px, skip-link focus, no page errors, and project content with JavaScript disabled. This is not a WCAG conformance claim. Core Web Vitals, human assistive-technology review, and additional browser engines remain unverified.
 
 The profile README is a draft file under `docs/github-profile`; the special profile repository does not exist and the README has not been activated on the account.
