@@ -16,7 +16,7 @@ I’m seeking **2027 new graduate software engineering roles**, especially in ba
 
 ### Engineering checks
 
-The review branches include locally executed tests for idempotent document updates, source references, failed-storage offset handling, malformed-event quarantine, catalog validation, and UI recovery. Each repository’s validation notes distinguish passing local checks from service integrations that still need to run. I’m building reproducible evidence before publishing performance claims.
+A GitHub CI smoke run persisted all 500 test events from Kafka to PostgreSQL at a deliberately limited 100 events/second; this checks the pipeline rather than maximum capacity. The review branches also include locally executed tests for idempotent document updates, source references, failed-storage offset handling, malformed-event quarantine, catalog validation, and UI recovery. Each repository’s validation notes distinguish passing local checks from service integrations that still need to run. I’m building reproducible evidence before publishing performance claims.
 
 ## Tools and foundations
 

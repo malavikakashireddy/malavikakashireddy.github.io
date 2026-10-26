@@ -4,7 +4,7 @@ A static HTML/CSS/JavaScript portfolio for 2027 new graduate software engineerin
 
 ## Local preview
 
-Requires Python 3; there is no build step or package installation.
+Requires Python 3; there is no application build step or runtime package installation. Optional browser checks use a Node.js development dependency.
 
 ```bash
 python3 -m http.server 8080 --bind 127.0.0.1
@@ -30,3 +30,13 @@ The website is served from `main` by GitHub Pages. Merging this branch may publi
 - Local validation checks asset/anchor integrity, external-link safety, essential metadata, and retired claims.
 
 [Validation evidence](docs/VALIDATION.md) records checks that actually ran. A real assistive-technology review and current external-site content verification remain separate tasks. [The profile README](docs/github-profile/README.md) is ready to use in the special `malavikakashireddy/malavikakashireddy` repository, which is not currently present in the connected account.
+
+Optional browser validation (Node.js 24 and a running local preview):
+
+```bash
+npm ci
+npx playwright install chromium
+npm run test:browser
+```
+
+The script checks four viewport widths, navigation visibility, skip-link focus, absence of page errors, and content with JavaScript disabled. It does not certify screen-reader conformance or Web Vitals.
