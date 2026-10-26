@@ -1,0 +1,22 @@
+# Validation evidence — 2026-10-26
+
+Prepared review branch. The deployed site remains unchanged until explicitly approved publication.
+
+| Check | Actual result |
+| --- | --- |
+| Python static-site checks | **5 passed** |
+| JavaScript syntax | `node --check script.js` passed |
+| Local HTML anchors and assets | Checked by tests; all resolve |
+| Heading/metadata/source-link policy | Checked by tests |
+| Legacy page alias/sitemap | Checked by tests |
+| Existing live homepage | HTTP 200, 8,559-byte HTML; matched the audited original index content |
+| Existing `resume.pdf` | Parsed; contains unsupported project metrics. Preserved but no longer prominently linked by the proposed page |
+| LinkedIn destination | URL matches existing site/resume; current ownership/content not independently verified |
+| Email delivery | Address matches source/profile; no email sent and delivery not tested |
+| Browser/mobile visual QA | **Not completed**: browser runtime/download attempts failed |
+| Keyboard/screen-reader testing | Code prepared; **not verified interactively** |
+| Remote CI / deployment | Check-only workflow added; no deployment initiated |
+
+The new page uses semantic sections, a skip link, visible focus, persistent mobile navigation, responsive grids, and system fonts. All primary content exists in HTML and the script only updates the footer year; no JavaScript-driven reveal can hide project content. These are source-level findings, not a WCAG conformance claim. Core Web Vitals, assistive technology, mobile overflow, and cross-browser rendering still need measurement in working browsers.
+
+The profile README is a draft file under `docs/github-profile`; the special profile repository does not exist and the README has not been activated on the account.

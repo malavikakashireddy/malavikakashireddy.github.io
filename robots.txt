@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://malavikakashireddy.github.io/sitemap.xml
